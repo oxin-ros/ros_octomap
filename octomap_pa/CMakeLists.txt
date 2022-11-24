@@ -1,16 +1,6 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(octomap_pa)
 
-find_package(PCL REQUIRED)
-link_directories(${PCL_LIBRARY_DIRS})
-add_definitions(${PCL_DEFINITIONS})
-
-find_package(octomap REQUIRED)
-
-# bugfix for g++-Warning
-#   "<command-line>:0:15: warning: missing whitespace after the macro name"
-remove_definitions(-DDISABLE_LIBUSB-1.0)
-
 find_package(catkin REQUIRED COMPONENTS
   roscpp
 
@@ -32,6 +22,16 @@ find_package(catkin REQUIRED COMPONENTS
   parameter_pa
   octomap_pa_msgs
 )
+
+find_package(PCL REQUIRED)
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+find_package(octomap REQUIRED)
+
+# bugfix for g++-Warning
+#   "<command-line>:0:15: warning: missing whitespace after the macro name"
+remove_definitions(-DDISABLE_LIBUSB-1.0)
 
 include_directories(
   include

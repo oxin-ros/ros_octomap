@@ -67,7 +67,7 @@ Parameter Name               | Type                 | Description
 -----------------------------|----------------------|-------------------------------------
 "~/degrading_time"           | double               | Duration how long the outdated nodes will be kept.
 "~/auto_degrading"           | bool                 | Turns on automatic degrading.
-"~/auto_degrading_intervall" | double               | Intervall for automatic degrading.
+"~/auto_degrading_interval" | double               | interval for automatic degrading.
 
 #### pointcloud insertion
 Parameter Name               | Type                 | Description

@@ -66,8 +66,8 @@ class cOctreeStampedPaRosParameter {
     //! turns on automatic degrading (true)
     bool auto_degrading_;
 
-    //! intervall for automatic degrading (2.0s)
-    double auto_degrading_intervall_;
+    //! interval for automatic degrading (2.0s)
+    double auto_degrading_interval_;
 };
 
 

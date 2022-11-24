@@ -55,7 +55,7 @@ cOctreeStampedPaRosParameter::cOctreeStampedPaRosParameter() {
     // degrading parameters
     degrading_time_           = 60.0;
     auto_degrading_           = true;
-    auto_degrading_intervall_ = 2.0 ;
+    auto_degrading_interval_  = 2.0 ;
 }
 
 //**************************[cOctreeStampedPaRosParameter]*********************
@@ -72,7 +72,7 @@ cOctreeStampedPaRosParameter& cOctreeStampedPaRosParameter::operator = (
     // degrading parameters
     degrading_time_           = other.degrading_time_          ;
     auto_degrading_           = other.auto_degrading_          ;
-    auto_degrading_intervall_ = other.auto_degrading_intervall_;
+    auto_degrading_interval_  = other.auto_degrading_interval_;
 
     return *this;
 }

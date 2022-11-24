@@ -254,7 +254,7 @@ template <typename BASECLASS>
 
     // config for degrading (not used by default)
     result.degrading.auto_degrading           = false;
-    result.degrading.auto_degrading_intervall = -1;
+    result.degrading.auto_degrading_interval = -1;
     result.degrading.degrading_time           = -1;
 
     // return result

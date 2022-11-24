@@ -77,8 +77,8 @@ cOctreeStampedPaNode::cOctreeStampedPaNode() :
     // degrading parameter
     paramloader.load("~/degrading_time", rosparams_.degrading_time_);
     paramloader.load("~/auto_degrading", rosparams_.auto_degrading_);
-    paramloader.load("~/auto_degrading_intervall",
-      rosparams_.auto_degrading_intervall_);
+    paramloader.load("~/auto_degrading_interval",
+      rosparams_.auto_degrading_interval_);
 }
 
 //**************************[~cOctreeStampedPaNode]****************************
@@ -98,8 +98,8 @@ octomap_pa_msgs::Config cOctreeStampedPaNode::getConfig() {
     // config for degrading (not used by default)
     result.degrading.degrading_time           = rosparams_.degrading_time_;
     result.degrading.auto_degrading           = rosparams_.degrading_time_;
-    result.degrading.auto_degrading_intervall =
-      rosparams_.auto_degrading_intervall_;
+    result.degrading.auto_degrading_interval =
+      rosparams_.auto_degrading_interval_;
 
     // return result
     return result;

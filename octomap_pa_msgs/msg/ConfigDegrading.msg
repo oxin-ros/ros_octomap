@@ -7,5 +7,5 @@
 float32 degrading_time
 # turns on automatic degrading (default true)
 bool auto_degrading
-# intervall for automatic degrading (default 2.0 seconds)
-float32 auto_degrading_intervall
+# interval for automatic degrading (default 2.0 seconds)
+float32 auto_degrading_interval

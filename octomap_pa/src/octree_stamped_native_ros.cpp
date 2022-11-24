@@ -80,7 +80,7 @@ void cOctreeStampedNativeRos::checkDegrading() {
 
     // check if interval is reached
     if (getOutputTime() - last_degrading_time_ >
-      ros::Duration(rosparams_.auto_degrading_intervall_)) {
+      ros::Duration(rosparams_.auto_degrading_interval_)) {
         last_degrading_time_ = getOutputTime();
 
         degradeOutdatedNodes();
